@@ -49,7 +49,7 @@ syn match       stellaFloat              "[+-]?([0-9]+[.])?[0-9]+"
 highlight def link stellaString               String
 highlight def link stellaBoolean              Boolean
 highlight def link stellaSign                 Type
-highlight def link stellaDeclaration          Keyword
+highlight def link stellaDeclaration          Statement
 highlight def link stellaStatement            Statement
 highlight def link stellaBrackets             Type
 highlight def link stellaRepeat               Repeat
