@@ -7,11 +7,12 @@ let b:current_syntax = "stella"
 "keywords
 syn keyword stellaConditional if else
 syn keyword stellaRepeat      loop
-syn keyword stellaKeyword     break continue let function
+syn keyword stellaKeyword     let function
+syn keyword stellaStatement   break continue
 syn keyword stellaStorage     mut
 syn keyword stellaType        int float bool string byte
 syn keyword stellaBoolean     true false
-syn keyword stellaTodo        contained TODO FIXME NOTE
+syn keyword stellaTodo        contained TODO FIXME NOTE BUG
 
 "match
 syn match stellaBrackets			 '[\[\]{}=]'
@@ -30,28 +31,28 @@ syn region stellaString              matchgroup=stellaStringDelimiter start=+"+ 
 syn region stellaCommentLine         start="//" end="$"   contains=stellaTodo
 
 " Integers
-syn match       stellaDecimalInt         "\<\d\+\([Ee]\d\+\)\?\>"
+syn match       stellaDecimalInt         "\<\d\+\\?\>"
 
 " Floating point
-syn match       stellaFloat              "\<\d\+\.\d*\([Ee][-+]\d\+\)\?\>"
-syn match       stellaFloat              "\<\.\d\+\([Ee][-+]\d\+\)\?\>"
-syn match       stellaFloat              "\<\d\+[Ee][-+]\d\+\>"
+syn match       stellaFloat              "\<\d\+\.\d*\?\>"
+syn match       stellaFloat              "\<\.\d\+\\?\>"
 
-highlight link stellaString               String
-highlight link stellaBoolean              Boolean
-highlight link stellaSign                 Type
-highlight link stellaKeyword              Keyword
-highlight link stellaBrackets             Type
-highlight link stellaRepeat               Repeat
-highlight link stellaConditional          Conditional
-highlight link stellaOperator             Operator
-highlight link stellaIdentifier           Identifier
-highlight link stellaType                 Type
-highlight link stellaTodo                 TODO
-highlight link stellaStorage              StorageClass
-highlight link stellaCommentLine          Comment
+highlight def link stellaString               String
+highlight def link stellaBoolean              Boolean
+highlight def link stellaSign                 Type
+highlight def link stellaKeyword              Keyword
+highlight def link stellaStatement            Statement
+highlight def link stellaBrackets             Type
+highlight def link stellaRepeat               Repeat
+highlight def link stellaConditional          Conditional
+highlight def link stellaOperator             Operator
+highlight def link stellaIdentifier           Identifier
+highlight def link stellaType                 Type
+highlight def link stellaTodo                 TODO
+highlight def link stellaStorage              StorageClass
+highlight def link stellaCommentLine          Comment
 
-hi def link     stellaDecimalInt         Integer
-hi def link     Integer             Number
-hi def link     stellaFloat              Float
-hi def link     Float               Number
+highlight def link stellaDecimalInt    Integer
+highlight def link Integer             Number
+highlight def link stellaFloat         Float
+highlight def link Float               Number
