@@ -48,7 +48,7 @@ syn match       stellaFloat              "[+-]?([0-9]+[.])?[0-9]+"
 
 highlight def link stellaString               String
 highlight def link stellaBoolean              Boolean
-highlight def link stellaSign                 Type
+highlight def link stellaSign                 Operator
 highlight def link stellaDeclaration          Statement
 highlight def link stellaStatement            Statement
 highlight def link stellaBrackets             Type
@@ -60,7 +60,7 @@ highlight def link stellaType                 Type
 highlight def link stellaTodo                 TODO
 highlight def link stellaStorage              StorageClass
 highlight def link stellaCommentLine          Comment
-highlight def link stellaBuiltins             Identifier
+highlight def link stellaBuiltins             Macro
 
 highlight def link stellaFunctionName        Function
 highlight def link stellaFunctionCall        Function
