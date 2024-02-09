@@ -18,7 +18,7 @@ syn keyword stellaBoolean     true false
 syn keyword stellaTodo        contained TODO FIXME NOTE BUG PERF
 
 "match
-syn match stellaBuiltins       '\b(print!|println!)'
+syn match stellaBuiltins       '\b(print|println)'
 syn match stellaBrackets			 '[\[\]{}=]'
 syn match stellaBrackets			 ' != '
 syn match stellaSign  			 '[+*-]'
