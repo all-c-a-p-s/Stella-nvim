@@ -1,1 +1,1 @@
-vim.cmd([[au BufRead,BufNewFile *.ron set filetype=ron]])
+vim.cmd([[au BufRead,BufNewFile *.ste set filetype=stella]])
