@@ -34,7 +34,11 @@ syn region stellaString              matchgroup=stellaStringDelimiter start=+"+ 
 syn region stellaCommentLine         start="//" end="$"   contains=stellaTodo
 
 " Integers
-syn match       stellaDecimalInt         "[+-]?/\d+/"
+syn match       stellaDecimalInt         "\<\d\+\([Ee]\d\+\)\?\>"
+
+syn match       stellaFloat              "\<\d\+\.\d*\([Ee][-+]\d\+\)\?\>"
+syn match       stellaFloat              "\<\.\d\+\([Ee][-+]\d\+\)\?\>"
+syn match       stellaFloat              "\<\d\+[Ee][-+]\d\+\>"
 syn match       stellaFloat              "[+-]?([0-9]+[.])?[0-9]+"
 
 highlight def link stellaString               String
