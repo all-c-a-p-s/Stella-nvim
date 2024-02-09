@@ -32,8 +32,8 @@ syn region stellaCommentLine         start="//" end="$"   contains=stellaTodo
 
 " Integers
 syn match       stellaDecimalInt         "/ \d+ /"
-
-" Floating point
+syn match       Integer                  "[+-]?/ \d+/"
+syn match       Float                    "[+-]?([0-9]+[.])?[0-9]+"
 syn match       stellaFloat              "[+-]?([0-9]+[.])?[0-9]+"
 
 highlight def link stellaString               String
