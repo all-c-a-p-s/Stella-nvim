@@ -2,11 +2,7 @@
 
 Syntax highlighting plugin for [Stella](https://github.com/all-c-a-p-s/Stella) programming language
 
-![Demo 1](demo.PNG)
-
-
-![Demo 2](demo2.PNG)
-
+![Demo 1](demo1.PNG)
 
 ![Demo 3](demo3.PNG)
 
