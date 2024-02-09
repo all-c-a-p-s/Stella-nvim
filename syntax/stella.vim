@@ -1,3 +1,6 @@
+" Language: Stella
+" Maintainer: Sebastiano Rebonato-Scott (https://github.com/all-c-a-p-s)
+
 if exists('b:current_syntax')
     finish
 endif
@@ -12,7 +15,7 @@ syn keyword stellaStatement   break continue
 syn keyword stellaStorage     mut
 syn keyword stellaType        int float bool string byte
 syn keyword stellaBoolean     true false
-syn keyword stellaTodo        contained TODO FIXME NOTE BUG
+syn keyword stellaTodo        contained TODO FIXME NOTE BUG PERF
 
 "match
 syn match stellaBrackets			 '[\[\]{}=]'
@@ -31,9 +34,7 @@ syn region stellaString              matchgroup=stellaStringDelimiter start=+"+ 
 syn region stellaCommentLine         start="//" end="$"   contains=stellaTodo
 
 " Integers
-syn match       stellaDecimalInt         "/ \d+ /"
-syn match       Integer                  "[+-]?/ \d+/"
-syn match       Float                    "[+-]?([0-9]+[.])?[0-9]+"
+syn match       stellaDecimalInt         "[+-]?/\d+/"
 syn match       stellaFloat              "[+-]?([0-9]+[.])?[0-9]+"
 
 highlight def link stellaString               String
