@@ -62,8 +62,8 @@ highlight def link stellaStorage              StorageClass
 highlight def link stellaCommentLine          Comment
 highlight def link stellaBuiltins             Identifier
 
-highlight def link stellaFunctionName        Special
-highlight def link stellaFunctionCall        Special
+highlight def link stellaFunctionName        Function
+highlight def link stellaFunctionCall        Function
 
 highlight def link stellaDecimalInt    Integer
 highlight def link Integer             Number
