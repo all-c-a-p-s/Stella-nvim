@@ -30,7 +30,7 @@ syn match stellaSign  			 '<='
 syn match stellaSign  			 ' < '
 
 syn match stellaFunctionDeclaration display "\s*\zsfunction\s*\i*\s*<[^>]*>" contains=stellaFunctionName,stellaDeclaration
-syn match stellaFunctionCall        /\w\+\ze\s*(/ contains=stellaBuiltins,stellaDeclaration
+syn match stellaFunctionCall        /\w\+\ze\s*(/ contains=stellaDeclaration
 syn match stellaFunctionName        display contained /\s\w\+/
 
 "region
@@ -51,7 +51,7 @@ highlight def link stellaBoolean              Boolean
 highlight def link stellaSign                 Operator
 highlight def link stellaDeclaration          Statement
 highlight def link stellaStatement            Statement
-highlight def link stellaBrackets             Type
+highlight def link stellaBrackets             Operator
 highlight def link stellaRepeat               Repeat
 highlight def link stellaConditional          Conditional
 highlight def link stellaOperator             Operator
@@ -60,7 +60,7 @@ highlight def link stellaType                 Type
 highlight def link stellaTodo                 TODO
 highlight def link stellaStorage              StorageClass
 highlight def link stellaCommentLine          Comment
-highlight def link stellaBuiltins             Macro
+highlight def link stellaBuiltins             Function
 
 highlight def link stellaFunctionName        Function
 highlight def link stellaFunctionCall        Function
