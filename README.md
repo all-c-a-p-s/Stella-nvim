@@ -24,3 +24,4 @@ You can install Stella-nvim with a package manager such as lazy
 Enable the syntax highlighting with the command ```:syntax on```
 
 You will also need to run the ```:syntax on``` command after changing colorscheme in neovim.
+NOTE: on Mac and Linux you may need to run the command ```:w ++ff=unix``` in the ```stella.vim``` file to prevent errors
